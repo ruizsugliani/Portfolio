@@ -33,7 +33,7 @@ export function About() {
     },
   ];
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 p-6 w-full mx-auto bg-black-100">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 p-6 w-full mx-auto bg-black-100">
       {features.map((feature, index) => (
         <Feature key={feature.title} {...feature} index={index} />
       ))}
@@ -55,9 +55,7 @@ const Feature = ({
   return (
     <div
       className={cn(
-        "flex flex-col lg:border-r  py-10 relative group/feature ",
-        (index === 0 || index === 4) && "lg:border-l ",
-        index < 4 && "lg:border-b "
+        "flex flex-col border-r border-b border-l py-10 relative group/feature ",
       )}
     >
       {index < 4 && (
