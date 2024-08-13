@@ -117,14 +117,14 @@ export const projects: Array<MovingCard> = [
         name: undefined,
         title: "FIFA 2022 World Cup Unofficial Page",
         image: "fifa_store.png",
-        technologies: [ReactJs, JavaScript, Bootstrap]
+        technologies: [ReactJs, JavaScript, Bootstrap, Firebase]
     },
     {
         quote: undefined,
         name: undefined,
         title: "Wallet Partner",
         image: "salinas_robert.png",
-        technologies: [Kotlin]
+        technologies: [Kotlin, Firebase]
     },
     {
         quote: undefined,

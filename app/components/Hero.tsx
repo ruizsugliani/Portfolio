@@ -8,7 +8,7 @@ function Hero() {
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black-100 [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)]"></div>
       <div className="flex flex-col gap-y-6 justify-center align-middle items-center">
         <p className="text-5xl sm:text-5xl xl:text-7xl font-bold relative z-20 bg-clip-text text-neutral-100">
-            Transformando ideas en soluciones innovadoras y eficientes
+        Transforming ideas into innovative and efficient solutions
         </p>
         <div className="flex flex-col gap-y-6 h-[30vh] w-[30vh]">
             <div className="rounded-xl border-neutral-100 border-2">

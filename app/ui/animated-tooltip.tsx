@@ -11,11 +11,9 @@ import {
 import { ToolTip } from "../data/data";
 
 export const AnimatedTooltip = ({
-  items,
-  itemColor
+  items
 }: {
-  items: ToolTip[],
-  itemColor: string
+  items: ToolTip[]
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const springConfig = { stiffness: 100, damping: 5 };
@@ -39,7 +37,7 @@ export const AnimatedTooltip = ({
     <>
       {items.map((item, idx) => (
         <div
-          className="-mr-4  relative group"
+          className="-mr-4 relative group"
           key={item.name}
           onMouseEnter={() => setHoveredIndex(item.id)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -80,7 +78,7 @@ export const AnimatedTooltip = ({
             width={50}
             src={item.image}
             alt={item.name}
-            className={`object-cover !m-0 !p-0 object-top rounded-full h-14 w-14 border-2 group-hover:scale-105 group-hover:z-30 border-white  relative transition duration-500 ${itemColor}`}
+            className={`object-cover !m-0 !p-0 object-top h-10 w-10 group-hover:scale-105 group-hover:z-30 relative transition duration-500`}
           />
         </div>
       ))}

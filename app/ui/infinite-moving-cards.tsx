@@ -100,11 +100,13 @@ export const InfiniteMovingCards = ({
               ></div>
                 {item.image && <Image alt="alt" src={`/${item.image}`} height={500} width={500} className="w-full rounded-2xl"/>}
                 {item.quote && <span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">item.quote</span>}
-              <div className="relative z-20 mt-6 flex flex-row items-center justify-between">
+              <div className="relative z-20 mt-6 flex items-center justify-between">
                   {item.name && <span className="text-sm leading-[1.6] text-gray-400 font-normal">{item.name}</span>}
-                  {item.title && <span className=" text-md leading-[1.6] text-white font-normal">{item.title}</span>}
+                  {item.title && <span className=" text-lg leading-[1.6] text-white font-normal">{item.title}</span>}
+              </div>
+              <div className="flex mt-2 justify-between items-center align-middle">
                   {
-                    <AnimatedTooltip items={item.technologies} itemColor="gray-400"/>
+                      <AnimatedTooltip items={item.technologies} />
                   }
               </div>
             </blockquote>
