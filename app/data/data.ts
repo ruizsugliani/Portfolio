@@ -1,3 +1,6 @@
+import { plugins } from "chart.js";
+import { title } from "process";
+
 export type ToolTip = {
     id: number;
     name: string;
@@ -76,12 +79,32 @@ const Firebase: ToolTip = {
     image: 'firebase.svg'
 }
 
+const SpringBoot: ToolTip = {
+    id: 13,
+    name: 'Spring Boot',
+    image: 'springboot.svg'
+}
+
+const Cplusplus: ToolTip = {
+    id: 14,
+    name: 'C++',
+    image: 'cplusplus.svg'
+}
+
+const Python: ToolTip = {
+    id: 15,
+    name: 'Python',
+    image: 'python.svg'
+}
+
+
 export type MovingCard = {
     quote: string | undefined,
     name: string | undefined,
     title: string,
-    image: string
-    technologies: Array<ToolTip>
+    image: string,
+    technologies: Array<ToolTip>,
+    url: string
 }
 export const projects: Array<MovingCard> = [
     {
@@ -89,48 +112,89 @@ export const projects: Array<MovingCard> = [
         name: undefined,
         title: "Boca Jrs Unofficial Page",
         image: "boca_pr.png",
-        technologies: [NextJs, TypeScript, Tailwind, PostreSql]
+        technologies: [NextJs, TypeScript, Tailwind, PostreSql],
+        url: "https://boca-jrs-project.vercel.app/"
     },
     {
         quote: undefined,
         name: undefined,
         title: "Salinas Roberts Alcorta Attorneys",
         image: "salinas_robert.png",
-        technologies: [NextJs, TypeScript, Tailwind]
+        technologies: [NextJs, TypeScript, Tailwind],
+        url: "https://salinas-roberts-alcorta.vercel.app/"
     },
     {
         quote: undefined,
         name: undefined,
         title: "Take Away Now",
         image: "tan.png",
-        technologies: [NextJs, TypeScript, Tailwind]
+        technologies: [NextJs, TypeScript, Tailwind, SpringBoot],
+        url: "https://front-takeawaynow-dcnt.onrender.com/"
     },
     {
         quote: undefined,
         name: undefined,
         title: "PSA Ticket Request System",
         image: "psa_trs.png",
-        technologies: [NextJs, TypeScript, Tailwind]
+        technologies: [NextJs, TypeScript, Tailwind, SpringBoot],
+        url: "https://front-aninfo-psa.onrender.com/"
     },
     {
         quote: undefined,
         name: undefined,
         title: "FIFA 2022 World Cup Unofficial Page",
         image: "fifa_store.png",
-        technologies: [ReactJs, JavaScript, Bootstrap, Firebase]
+        technologies: [ReactJs, JavaScript, Bootstrap, Firebase],
+        url: "https://github.com/ruizsugliani/FIFA-Store"
     },
     {
         quote: undefined,
         name: undefined,
         title: "Wallet Partner",
         image: "salinas_robert.png",
-        technologies: [Kotlin, Firebase]
+        technologies: [Kotlin, Firebase],
+        url: "https://github.com/ruizsugliani/tdl-kotlin-2023-1c"
     },
     {
         quote: undefined,
         name: undefined,
         title: "Risttreto Web Page",
         image: "risttreto_wp.png",
-        technologies: [Html, Css, Sass, JavaScript]
+        technologies: [Html, Css, Sass, JavaScript],
+        url: "https://ristretto-cafe-resto.netlify.app/index.html"
     },
   ];
+
+const CreditosObTot = 226;
+const CreditosObAct = 131;
+const CreditosOpTot = 24;
+const CreditosOpAct = 13;
+const PruebaSufIng = 8;
+
+export const carreerData = {
+    labels: [
+        'Optional credits',
+        'Required credits',
+        'English proficiency test',
+    ],
+    datasets: [{
+        data: [
+            CreditosOpAct,
+            CreditosObAct,
+            PruebaSufIng,
+        ],
+        backgroundColor: [
+        '#AF6FEC', /* Optativos actuales */
+        '#3CA6F1', /* Obligatorios actuales */
+        '#FEDC5D', /* Prueba suficiencia inglés */
+        /*'#BCE1FA',  Obligatorios restantes */
+        /*'#DCC0F7',  Optativos restantes */
+        ],
+        hoverOffset: 20,
+        hoverBorderColor: "#000",
+        borderColor: "#000",
+    }],
+}
+
+export const adquiredSkills: Array<ToolTip> = [Cplusplus, Python, Html, Css, JavaScript, PostreSql, Tailwind, ReactJs]
+export const learningSkills: Array<ToolTip> = [NextJs, Firebase, Kotlin, TypeScript]

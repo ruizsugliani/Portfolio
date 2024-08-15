@@ -5,6 +5,8 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { MovingCard } from "../data/data";
 import { AnimatedTooltip } from "./animated-tooltip";
+import Link from "next/link";
+import { url } from "inspector";
 
 export const InfiniteMovingCards = ({
   items,
@@ -93,23 +95,25 @@ export const InfiniteMovingCards = ({
             }}
             key={crypto.randomUUID()}
           >
-            <blockquote>
-              <div
-                aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
-              ></div>
-                {item.image && <Image alt="alt" src={`/${item.image}`} height={500} width={500} className="w-full rounded-2xl"/>}
-                {item.quote && <span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">item.quote</span>}
-              <div className="relative z-20 mt-6 flex items-center justify-between">
-                  {item.name && <span className="text-sm leading-[1.6] text-gray-400 font-normal">{item.name}</span>}
-                  {item.title && <span className=" text-lg leading-[1.6] text-white font-normal">{item.title}</span>}
-              </div>
-              <div className="flex mt-2 justify-between items-center align-middle">
-                  {
-                      <AnimatedTooltip items={item.technologies} />
-                  }
-              </div>
-            </blockquote>
+            <Link href={item.url} target="_blank" rel="noopener noreferrer">
+              <blockquote>
+                <div
+                  aria-hidden="true"
+                  className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
+                ></div>
+                  {item.image && <Image alt="alt" src={`/${item.image}`} height={500} width={500} className="w-full rounded-2xl"/>}
+                  {item.quote && <span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">item.quote</span>}
+                <div className="relative z-20 mt-6 flex items-center justify-between">
+                    {item.name && <span className="text-sm leading-[1.6] text-gray-400 font-normal">{item.name}</span>}
+                    {item.title && <span className=" text-lg leading-[1.6] text-white font-normal">{item.title}</span>}
+                </div>
+                <div className="flex mt-2 justify-between items-center align-middle">
+                    {
+                        <AnimatedTooltip items={item.technologies} />
+                    }
+                </div>
+              </blockquote>
+            </Link>
           </li>
         ))}
       </ul>
