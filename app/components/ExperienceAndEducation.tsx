@@ -154,9 +154,8 @@ const items = [
       adquiredSkills.map(
         (s) => {
           return (
-            <div className="p-2 bg-black-100 rounded-xl flex justify-center items-center align-middle">
+            <div key={crypto.randomUUID()} className="p-2 bg-black-100 rounded-xl flex justify-center items-center align-middle">
               <Image
-                key={crypto.randomUUID()}
                 height={50}
                 width={50}
                 src={s.image}
@@ -184,7 +183,7 @@ const items = [
       learningSkills.map(
         (s) => {
           return (
-            <div className="p-2 bg-black-100 rounded-xl flex justify-center items-center align-middle">
+            <div key={crypto.randomUUID()} className="p-2 bg-black-100 rounded-xl flex justify-center items-center align-middle">
               <Image
                 key={crypto.randomUUID()}
                 height={50}
