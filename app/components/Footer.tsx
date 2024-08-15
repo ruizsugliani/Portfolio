@@ -47,6 +47,7 @@ function Footer() {
             )
         }
         </div>
+        <span className="px-2 py-4">Made by Santiago Nahuel Ruiz Sugliani - © 2024</span>
     </section>
   )
 }

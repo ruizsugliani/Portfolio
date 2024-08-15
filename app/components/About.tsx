@@ -55,7 +55,7 @@ const Feature = ({
   return (
     <div
       className={cn(
-        "flex flex-col border-r border-b border-l py-10 relative group/feature ",
+        "flex flex-col border-r border-b border-l py-10 relative group/feature",
       )}
     >
       {index < 4 && (
