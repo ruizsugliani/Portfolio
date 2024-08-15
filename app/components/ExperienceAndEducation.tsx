@@ -154,7 +154,14 @@ const items = [
       adquiredSkills.map(
         (s) => {
           return (
-            <div key={crypto.randomUUID()} className="p-2 bg-black-100 rounded-xl flex justify-center items-center align-middle">
+            <div
+              key={crypto.randomUUID()}
+              className="p-2 bg-black-100 rounded-xl flex justify-center items-center align-middle"
+              style={{
+                background:
+                  "linear-gradient(180deg, var(--black-100), var(--slate-800)",
+              }}
+              >
               <Image
                 height={50}
                 width={50}
@@ -178,12 +185,21 @@ const items = [
         These are the technologies that I am learning my free time.
       </span>
     ),
-    header: <div className="grid grid-cols-2 gap-2 h-full">
+    header: 
+    <div
+     className="grid grid-cols-2 gap-2 h-full">
     {
       learningSkills.map(
         (s) => {
           return (
-            <div key={crypto.randomUUID()} className="p-2 bg-black-100 rounded-xl flex justify-center items-center align-middle">
+            <div
+              key={crypto.randomUUID()}
+              className="p-2 bg-black-100 rounded-xl flex justify-center items-center align-middle"
+              style={{
+                background:
+                  "linear-gradient(180deg, var(--black-100), var(--slate-800)",
+              }}
+              >
               <Image
                 key={crypto.randomUUID()}
                 height={50}
