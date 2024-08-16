@@ -11,13 +11,13 @@ export default function Proyects() {
             items={projects.filter( (_, idx) => idx % 2 === 0)}
             direction="right"
             speed="slow"
-            className="h-1/2"
+            className="h-1/2 max-h-[30rem]"
             />
             <InfiniteMovingCards
             items={projects.filter( (_, idx) => idx % 2 === 1)}
             direction="left"
             speed="slow"
-            className="h-1/2"
+            className="h-1/2 max-h-[30rem]"
             />
         </section>
     );

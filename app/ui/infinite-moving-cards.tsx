@@ -12,13 +12,13 @@ export const InfiniteMovingCards = ({
   items,
   direction = "left",
   speed = "fast",
-  pauseOnHover = true,
+  pauseOnHover = false,
   className,
 }: {
   items: MovingCard[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
-  pauseOnHover?: boolean;
+  pauseOnHover?: false;
   className?: string;
 }) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
@@ -102,12 +102,13 @@ export const InfiniteMovingCards = ({
                   className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
                 ></div>
                   {item.image && <Image alt="alt" src={`/${item.image}`} height={500} width={500} className="w-full rounded-2xl"/>}
-                  {item.quote && <span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">item.quote</span>}
-                <div className="relative z-20 mt-6 flex items-center justify-between">
-                    {item.name && <span className="text-sm leading-[1.6] text-gray-400 font-normal">{item.name}</span>}
+                <div className="z-20 mt-6 flex items-center justify-center">
                     {item.title && <span className=" text-lg leading-[1.6] text-white font-normal">{item.title}</span>}
                 </div>
-                <div className="flex mt-2 justify-between items-center align-middle">
+                <div className="z-20 flex items-center justify-center">
+                    {item.type && <span className=" text-md leading-[1.6] text-white-100 font-normal">{item.type}</span>}
+                </div>
+                <div className="flex mt-6 justify-center items-center align-middle gap-x-10">
                     {
                         <AnimatedTooltip items={item.technologies} />
                     }

@@ -104,7 +104,8 @@ export type MovingCard = {
     title: string,
     image: string,
     technologies: Array<ToolTip>,
-    url: string
+    url: string,
+    type: 'University project' | 'Personal project' | 'Personal project - Work in progress'
 }
 export const projects: Array<MovingCard> = [
     {
@@ -113,7 +114,8 @@ export const projects: Array<MovingCard> = [
         title: "Boca Jrs Unofficial Page",
         image: "boca_pr.png",
         technologies: [NextJs, TypeScript, Tailwind, PostreSql],
-        url: "https://boca-jrs-project.vercel.app/"
+        url: "https://boca-jrs-project.vercel.app/",
+        type: "Personal project - Work in progress"
     },
     {
         quote: undefined,
@@ -121,7 +123,8 @@ export const projects: Array<MovingCard> = [
         title: "Salinas Roberts Alcorta Attorneys",
         image: "salinas_robert.png",
         technologies: [NextJs, TypeScript, Tailwind],
-        url: "https://salinas-roberts-alcorta.vercel.app/"
+        url: "https://salinas-roberts-alcorta.vercel.app/",
+        type: "Personal project - Work in progress"
     },
     {
         quote: undefined,
@@ -129,7 +132,8 @@ export const projects: Array<MovingCard> = [
         title: "Take Away Now",
         image: "tan.png",
         technologies: [NextJs, TypeScript, Tailwind, SpringBoot],
-        url: "https://front-takeawaynow-dcnt.onrender.com/"
+        url: "https://front-takeawaynow-dcnt.onrender.com/",
+        type: "University project"
     },
     {
         quote: undefined,
@@ -137,7 +141,8 @@ export const projects: Array<MovingCard> = [
         title: "PSA Ticket Request System",
         image: "psa_trs.png",
         technologies: [NextJs, TypeScript, Tailwind, SpringBoot],
-        url: "https://front-aninfo-psa.onrender.com/"
+        url: "https://front-aninfo-psa.onrender.com/",
+        type: "University project"
     },
     {
         quote: undefined,
@@ -145,7 +150,8 @@ export const projects: Array<MovingCard> = [
         title: "FIFA 2022 World Cup Unofficial Page",
         image: "fifa_store.png",
         technologies: [ReactJs, JavaScript, Bootstrap, Firebase],
-        url: "https://github.com/ruizsugliani/FIFA-Store"
+        url: "https://github.com/ruizsugliani/FIFA-Store",
+        type: "Personal project"
     },
     {
         quote: undefined,
@@ -153,7 +159,8 @@ export const projects: Array<MovingCard> = [
         title: "Wallet Partner",
         image: "salinas_robert.png",
         technologies: [Kotlin, Firebase],
-        url: "https://github.com/ruizsugliani/tdl-kotlin-2023-1c"
+        url: "https://github.com/ruizsugliani/tdl-kotlin-2023-1c",
+        type: "University project"
     },
     {
         quote: undefined,
@@ -161,7 +168,8 @@ export const projects: Array<MovingCard> = [
         title: "Risttreto Web Page",
         image: "risttreto_wp.png",
         technologies: [Html, Css, Sass, JavaScript],
-        url: "https://ristretto-cafe-resto.netlify.app/index.html"
+        url: "https://ristretto-cafe-resto.netlify.app/index.html",
+        type: "Personal project"
     },
   ];
 

@@ -9,7 +9,7 @@ import {
 export function About() {
   const features = [
     {
-      title: "Fiuba student",
+      title: "FIUBA student",
       description:
         "Since September 2021, I have been studying Computer Engineering at the Faculty of Engineering of the University of Buenos Aires, I currently have more than sixty percent of the subjects approved.",
       icon: <IconSchool  color="white"/>,
