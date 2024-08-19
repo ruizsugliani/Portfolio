@@ -101,7 +101,7 @@ export const InfiniteMovingCards = ({
                   aria-hidden="true"
                   className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
                 ></div>
-                  {item.image && <Image alt="alt" src={`/${item.image}`} height={500} width={500} className="w-full rounded-2xl"/>}
+                  {item.image && <Image alt="alt" src={`/${item.image}`} height={500} width={500} className="w-full h-[13rem] rounded-2xl"/>}
                 <div className="z-20 mt-6 flex items-center justify-center">
                     {item.title && <span className=" text-lg leading-[1.6] text-white font-normal">{item.title}</span>}
                 </div>

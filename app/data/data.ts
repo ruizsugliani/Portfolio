@@ -157,7 +157,7 @@ export const projects: Array<MovingCard> = [
         quote: undefined,
         name: undefined,
         title: "Wallet Partner",
-        image: "salinas_robert.png",
+        image: "wallet_partnet.webp",
         technologies: [Kotlin, Firebase],
         url: "https://github.com/ruizsugliani/tdl-kotlin-2023-1c",
         type: "University project"
@@ -170,6 +170,33 @@ export const projects: Array<MovingCard> = [
         technologies: [Html, Css, Sass, JavaScript],
         url: "https://ristretto-cafe-resto.netlify.app/index.html",
         type: "Personal project"
+    },
+    {
+        quote: undefined,
+        name: undefined,
+        title: "Dune 2000 Remake",
+        image: "dune2000.jpg",
+        technologies: [Cplusplus],
+        url: "https://github.com/LGhosn/Dune-Taller-de-Programacion-FIUBA",
+        type: "University project"
+    },
+    {
+        quote: undefined,
+        name: undefined,
+        title: "Tetris",
+        image: "tetris.jpg",
+        technologies: [Python],
+        url: "https://github.com/ruizsugliani/TETRIS",
+        type: "University project"
+    },
+    {
+        quote: undefined,
+        name: undefined,
+        title: "Chase",
+        image: "dune2000.jpg",
+        technologies: [Python],
+        url: "https://github.com/ruizsugliani/CHASE",
+        type: "University project"
     },
   ];
 

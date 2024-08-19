@@ -17,7 +17,7 @@ export function About() {
     {
       title: "Actually working",
       description:
-        "I have been working since the beginning of 2023 as a full stack developer, the technologies that I use daily are MSSQL, C++, HTML, CSS and JS. I am also in constant dialogue with clients providing support.",
+        "I have been working since the beginning of 2023 as a full stack developer, I use MSSQL, C++, HTML, CSS and JS on a daily basis. I am also in constant dialogue with customers, providing support to them.",
       icon: <IconBriefcase color="white"/>,
     },
     {
