@@ -150,7 +150,7 @@ export const projects: Array<MovingCard> = [
         title: "FIFA 2022 World Cup Unofficial Page",
         image: "fifa_store.png",
         technologies: [ReactJs, JavaScript, Bootstrap, Firebase],
-        url: "https://github.com/ruizsugliani/FIFA-Store",
+        url: "https://fifa-store-coderhouse.netlify.app/",
         type: "Personal project"
     },
     {
@@ -193,7 +193,7 @@ export const projects: Array<MovingCard> = [
         quote: undefined,
         name: undefined,
         title: "Chase",
-        image: "dune2000.jpg",
+        image: "chase.png",
         technologies: [Python],
         url: "https://github.com/ruizsugliani/CHASE",
         type: "University project"
